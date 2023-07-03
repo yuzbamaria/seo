@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    background-position: center; 
+    background-size: cover;
+    background-image: url(/images/1screen.jpg);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(8, 1, 1);
+    font-size: 1rem;
+}
+
+a:hover {
+    color: rgb(230, 173, 69);
+}
+
+header {
+    position:relative;
+    padding: 2 4rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+    font-size: medium;
+}

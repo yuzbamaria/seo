@@ -123,6 +123,12 @@ header {
     transition: scale 0.2 ease;
 }
 
+/* SECTION HERO */
+section#hero {
+    height: calc (100vh - 60px);
+    display: block;
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
     .navbar .links,

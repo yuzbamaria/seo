@@ -17,10 +17,10 @@
   <div class="navbar"> 
   <div class="logo"><a href="#">FocusTraff</a></div>
   <ul class="links">
-    <li><a href="cases">case studies</a></li>
-    <li><a href="services">services</a></li>
-    <li><a href="team">our team</a></li>
-    <li><a href="contacts">contacts</a></li>
+    <li><a href="cases">Case studies</a></li>
+    <li><a href="services">Services</a></li>
+    <li><a href="team">Our team</a></li>
+    <li><a href="contacts">Contacts</a></li>
   </ul>
   <a href="#" class="action_btn">Get a quote</a>
   <div class="toggle_btn">
@@ -46,6 +46,7 @@
 
     toggleBtn.onclick = function () {
       dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains ('open')
 
       toggleBtnIcon.classList = isOpen
       ? 'fa-solid fa-xmark'

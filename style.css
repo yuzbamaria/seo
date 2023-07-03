@@ -21,32 +21,32 @@ li {
 a {
     text-decoration: none;
     color: rgb(215, 209, 209);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 a:hover {
     color: rgb(230, 173, 69);
 }
 
+/* HEADER */
 header {
-    position:relative;
-    padding: 2 4rem;
+    position: relative;
+    padding: 0 2rem;
 }
 
 .navbar {
     width: 100%;
     height: 60px;
-    max-width: 1000px;
-    margin: 20px auto;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .navbar .logo a {
-    display: block;
-    margin: 10px 20px;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .navbar .links {
@@ -55,8 +55,6 @@ header {
 }
 
 .navbar .toggle_btn {
-    display: block;
-    margin: 10px 20px;
     color: rgb(215, 209, 209);
     font-size: 1.5rem;
     cursor: pointer;
@@ -69,9 +67,10 @@ header {
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
-    border-radius: 18px;
-    font-size: 1.2rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
     cursor: pointer;
+    transition: scale 0.2 ease;
  
 }
 
@@ -82,7 +81,6 @@ header {
 
 .action_btn:active {
     scale: 0.95;
-
 }
 
 /* DROPDOWN MENU */
@@ -90,11 +88,11 @@ header {
     display: none;
     position: absolute;
     right: 2rem;
-    top: 5rem;
+    top: 60px;
     height: 0;
-    width: 19rem;
+    width: 300px;
     background: #618194;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -112,16 +110,24 @@ header {
 }
 
 .dropdown_menu .action_btn {
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: center;
+    background-color: rgb(226, 162, 43);
+    color: rgb(215, 209, 209);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: scale 0.2 ease;
 }
 
 /* RESPONSIVE DESIGN */
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
     .navbar .links,
     .navbar .action_btn {
-      display: none;
+        display: none;
     }
 
 .navbar .toggle_btn {

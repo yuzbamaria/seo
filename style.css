@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: #4b697b;
     height: 100vh;
     background-position: center; 
     background-size: cover;
@@ -44,6 +44,8 @@ header {
 }
 
 .navbar .logo a {
+    display: block;
+    margin: 10px 20px;
     font-size: 1.5rem;
 }
 
@@ -53,6 +55,8 @@ header {
 }
 
 .navbar .toggle_btn {
+    display: block;
+    margin: 10px 20px;
     color: rgb(215, 209, 209);
     font-size: 1.5rem;
     cursor: pointer;
@@ -68,7 +72,7 @@ header {
     border-radius: 18px;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: ease;
+ 
 }
 
 .action_btn:hover {
@@ -78,12 +82,39 @@ header {
 
 .action_btn:active {
     scale: 0.95;
+
 }
 
 /* DROPDOWN MENU */
 .dropdown_menu {
+    display: none;
     position: absolute;
     right: 2rem;
+    top: 5rem;
+    height: 0;
+    width: 19rem;
+    background: #618194;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* RESPONSIVE DESIGN */
@@ -92,8 +123,19 @@ header {
     .navbar .action_btn {
       display: none;
     }
-}
 
 .navbar .toggle_btn {
     display: block
+}
+
+.dropdown_menu {
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 1rem;
+        width: unset;
+    }
+}
 }

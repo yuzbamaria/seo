@@ -12,6 +12,8 @@
 </head>
 <body>
   <header>
+
+  <nav>
   <div class="navbar"> 
   <div class="logo"><a href="#">FocusTraff</a></div>
   <ul class="links">
@@ -26,14 +28,30 @@
  </div>
 </div>
 
-<div class="dropdown_menu">
-  <li><a href="cases">case studies</a></li>
-  <li><a href="services">services</a></li>
-  <li><a href="team">our team</a></li>
-  <li><a href="contacts">contacts</a></li>
+<div class="dropdown_menu open">
+  <li><a href="cases">Case studies</a></li>
+  <li><a href="services">Services</a></li>
+  <li><a href="team">Our team</a></li>
+  <li><a href="contacts">Contacts</a></li>
   <li><a href="#" class="action_btn">Get a quote</a></li>
 </div>
+</nav>
 
   </header>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+  </script>
+
 </body>
 </html>

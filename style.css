@@ -6,11 +6,10 @@
 }
 
 body {
-    background-color: #4b697b;
+    background-image: url(images/1screen.jpg);
     height: 100vh;
     background-position: center; 
-    background-size: cover;
-    background-image: url(/images/1screen.jpg);
+    background-size: cover; 
 }
 
 li {
@@ -160,4 +159,12 @@ section#hero {
         width: unset;
     }
 }
+}
+
+.h1 {
+    font-size: 50px;
+}
+
+.h2 {
+    font-size: 25px;
 }

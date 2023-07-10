@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../pages/form.css" />
+</head>
+<body>
+
+    <header>
+
+        <nav>
+        <div class="navbar"> 
+        <div class="logo"><a href="#">FocusTraff</a></div>
+        <ul class="links">
+          <li><a href="hero">Case studies</a></li>
+          <li><a href="services">Services</a></li>
+          <li><a href="team">Our team</a></li>
+          <li><a href="contacts">Contacts</a></li>
+        </ul>
+
+        <div class="toggle_btn">
+        <i class="fa-sharp fa-solid fa-bars";"></i>
+       </div>
+      </div>
+      
+      <div class="dropdown_menu open">
+        <li><a href="hero">Case studies</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="team">Our team</a></li>
+        <li><a href="contacts">Contacts</a></li>
+      </div>
+      </nav>
+      
+    </header>
+    
+    <div class="container"> 
+        <div class="title"> Get in touch</div>
+    
+
+    <form  action="./formSubmit.html" method="get">
+        <div class="form_colomn">
+            <span><label for="uname">First name*:</label></span>
+            <input type="text" id="uname" name="uname" autocomplete="username" required>
+        </div>
+
+        <div class="form_colomn">
+        <label for="lname">Last name*:</label><br>
+        <input type="text" id="lname" name="lname" autocomplete="name" required>
+        </div>
+
+        <div class="form_colomn">
+        <label for="website">Website*:</label><br>
+        <input type="url" id="website" name="website" required>
+        </div>
+
+        <div class="form_colomn">
+        <label for="email">Email*:</label><br>
+        <input type="text" id="email" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="form_colomn">
+        <label for="pnumber">Phone number (optional):</label><br>
+        <input type="text" id="pnumber" name="pnumber" autocomplete="tel" required>
+        </div>
+
+        <div class="form_colomn">
+        <label for="question">How can we help?*:</label><br>
+        <input type="text" id="question" name="question" required>
+        </div>
+        
+        <button type="button">
+            <a href="formSuccess.html">Submit</a>
+        </button>
+     
+    </form>
+</div>
+<footer>
+ 
+</footer>
+</body>
+</html>

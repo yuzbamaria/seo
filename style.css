@@ -132,13 +132,11 @@ section#hero {
     text-align: center;
     color:  black;
     background-image: url(images/1screen.jpg);
-    padding: 6rem 3rem;
+    padding: 5rem;
 }
 
 #hero h1 {
     font-size: 50px;
-    margin-bottom: 3rem;
-    margin-top: 10rem;
 }
 
 .h2 {
@@ -179,7 +177,7 @@ section#hero {
 }
 
 .service-column {
-    
+
 }
 
 /* RESPONSIVE DESIGN */
